@@ -1,0 +1,101 @@
+.layout {
+    display: flex;
+    min-height: 90vh;
+    background-color: white;
+    color: black;
+    margin-top: 10vh;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.left > img {
+width: 200px;
+height: 100px;
+object-fit: contain;
+}
+
+.left > p {
+    color: #848892;
+}
+
+.timer {
+    display: flex;
+    color:#585858;
+    margin-top: 40px;
+}
+
+
+.time-unit {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    font-size: 50px
+}
+.label {
+    font-size:20px;
+}
+
+.name {
+    color: #848892;
+    background-color: #fff;
+    font-size: 60px;
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    height: 60vh;
+    padding: 30px;
+    box-shadow: 0 0 6.1px 3.9px rgba(28,31,86,.06);
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+  
+}
+
+
+.image-container > img {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+ .image-container::before ,.image-container::after {
+    content: '';
+    background: url('../images/flower2.png') no-repeat center center/cover;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    color: #000;
+    /* z-index: 10; */
+}
+
+.image-container::before {
+    top: -20%;
+    right: -10%;
+    -moz-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -ms-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
+
+.image-container::after {
+    bottom: -20%;
+    left: -10%;
+}

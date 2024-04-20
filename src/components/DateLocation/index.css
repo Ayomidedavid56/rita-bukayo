@@ -1,0 +1,21 @@
+.date-layout {
+    display: flex;
+    background-color: white;
+    color:#585858;
+    font-size: 40px;
+    font-family: 600;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+
+.date-layout >p {
+    padding: 2em;
+}
+
+.divider {
+    width: 1px;
+    height: 200px;
+    background-color: #585858;
+}

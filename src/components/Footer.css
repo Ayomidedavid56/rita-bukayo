@@ -1,0 +1,85 @@
+.footer {
+    width: 100%;
+    background-color: #2d2e21;
+    color: #eee;
+    padding: 3rem 1rem;
+}
+
+.footer .container {
+    max-width: 1240px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer li {
+    padding: 1rem;
+}
+
+.footer li a {
+    color: #fff;
+}
+
+.footer li a:hover {
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.bottom {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.line {
+    margin-bottom: 1rem;
+}
+
+.footer .nav-item-active  {
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+
+/* .... */
+
+.abreviation-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.abreviation{
+    position: relative;
+}  
+
+
+.abreviation::before{
+    content: '';
+    background: url('./images/swirl_left_transparent.png') no-repeat center center/cover;
+    height: 42px;
+    width: 110px;
+    position: absolute;
+    color: #000;
+    left: -130px;
+}
+
+.abreviation::after{
+    content: '';
+    background: url('./images/swirl_right_transparent.png') no-repeat center center/cover;
+    height: 42px;
+    width: 110px;
+    position: absolute;
+    color: #000;
+    right: -130px;
+}
+
+
+.abreviation {
+    font-size: 50px;
+}
+

@@ -1,0 +1,167 @@
+.couple-intro-layout {
+    display: flex;
+    /* min-height: 90vh; */
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10vw;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 48%;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 48%;
+}
+
+.left12_first {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#585858;
+
+}
+
+.about_content{
+	padding:80px 0 0 0;
+	position:relative;
+}
+.about_topsign{
+	position:absolute;
+	width:100%;
+	top:95px;
+	margin:auto;
+	text-align:center;
+	font-size:120px;
+}
+.about_content h2{
+	text-align:center;
+	font-weight:800;
+	font-size:26px;
+	padding:0 0 40px 0;
+}
+span.names_titles{
+	display:block;
+	width:100%;
+	text-align:center;
+	padding:0 0 10px 0;
+}
+.about_content p{
+    text-align: justify;
+    margin-top: 20px;
+}
+.about_pic_container{
+	position:relative;
+    width: 100%;
+
+}
+.about_pic{
+	background-color:#000000;
+	padding:0px;
+	margin:0px;
+	overflow:hidden;
+    width: 100%;
+}
+.about_pic img{
+	width:100%;
+	display:block;
+    height: 300px;
+    object-fit: cover;
+	transition: opacity 0.7s, transform 0.7s;
+	-webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+}
+.about_pic img::before, .about_pic img::after{
+	transition: opacity 0.7s, transform 0.7s;
+	-webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+}
+.about_pic_container:hover .about_pic img{
+	opacity: 0.5;
+	transform: scale(1.1);
+}
+span.about_picframe{
+	border:1px #fff solid;
+	display:block;
+	width:94%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:90%;
+	margin:3%;
+	z-index:777;
+	opacity: 0.4;
+	transition: opacity 0.7s, transform 0.7s;
+	-webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+}
+span.about_picframe::after, span.about_picframe::before{
+	transition: opacity 0.7s, transform 0.7s;
+	-webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+}
+
+.about_social{
+	position:absolute;
+	top:0;
+	width:100%;
+	text-align:center;
+	margin:auto;
+	z-index:888;
+	opacity: 0;
+	transition: opacity 0.7s, transform 0.7s;
+	-webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+}
+.about_social::before, .about_social::after{
+	transition: opacity 0.7s, transform 0.7s;
+	-webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+}
+.about_pic_container:hover .about_social{
+	opacity: 1;
+	transform: translateY(200%);
+	-webkit-transform:translateY(200%);
+}
+.about_pic_container:hover span.about_picframe{
+	opacity: 0.7;
+}
+
+.about_social > a {
+    margin: 0px 5px;
+}
+
+a, blockquote, span.love_quote, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, span.post_date, .latest_posts .left13:hover .post_info h3 a, .latest_posts .left13_last:hover .post_info h3 a, .checkbox_container label span, .footer_names{
+    color:#999700;
+    }
+    blockquote{
+    border-left:3px #999700 solid;}
+    a.post_read_more, a.view_all, .wp-pagenavi a, .wp-pagenavi span.current, .view_all_carousel a{
+    border:1px #999700 solid;}
+    .wp-pagenavi a:hover{ 
+    background-color:#999700;}
+    
+    .back, .about_topsign, span.names_titles, span.subtitle{
+    color:#b5af47;}
+    .back, .contact_email a{
+    border:1px solid #b5af47;}
+    .no-touch .back:hover, .countdown_container, a.thumb_read_more, .full_width_carousel .left14 h3, .full_width_carousel .left14_last h3, input.form_submit_contact, input[type="checkbox"] + label:before, input[type="checkbox"]:checked + label:before
+    {background-color:#b5af47; }
+    
+    
+    .tp-title span:nth-child(2), .tp-title:hover, .page_header_title a, .title span, .title_under, ul#main_menu li a.selected, ul#main_menu li a:hover, span.carousel_titles{
+    color:#d7d677;}
+    
+    ul#main_menu li a.selected, ul#main_menu li a:hover, .footer_menu li{
+    background:url(../images/menu_bullet.png) no-repeat left;}
+    
+    @media screen and (max-width: 680px) {
+    nav.menu{background-color:#b5af47;}
+    ul#main_menu li a.selected, ul#main_menu li a:hover, .footer_menu li{
+    background:none;}
+    }
