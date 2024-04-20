@@ -3,7 +3,7 @@ import "./index.css";
 export default function DateLocation() {
   return (
     <div className="date-layout ">
-      <p>
+      <p className="left-date">
         April <br />
         27 2024
       </p>

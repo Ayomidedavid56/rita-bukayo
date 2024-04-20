@@ -20,7 +20,11 @@
     width: 1px;
     height: 200px;
     background-color: #585858;
-    z-index: 200;
+}
+
+.left-date {
+    display: flex;
+    justify-content: right;
 }
 
 @media screen and (max-width: 510px) {

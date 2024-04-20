@@ -1,0 +1,12 @@
+.our-story {
+    padding: 10vh 10vw
+}
+
+.our-story p ,.our-story h4{
+margin-top: 20px;
+}
+
+@media screen and (max-width:400px) {
+    .our-story {   padding: 20px 10px;
+    }
+}
