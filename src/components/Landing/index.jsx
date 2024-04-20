@@ -43,7 +43,9 @@ export default function Landing() {
       <div className="left">
         <img src={flower} alt="" />
         <h2 className="name">Rita & Bukayo</h2>
-        <p>We Are Getting Married April 27, 2024</p>
+        <p style={{ textAlign: "center" }}>
+          We Are Getting Married <br /> April 27, 2024
+        </p>
         <div className="timer">
           <div className="time-unit">
             <p className="time">{dayValue}</p>
