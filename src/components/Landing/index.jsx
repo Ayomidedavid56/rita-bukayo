@@ -39,7 +39,7 @@ export default function Landing() {
   }, 1000);
 
   return (
-    <div className="layout">
+    <div className="landing-layout">
       <div className="left">
         <img src={flower} alt="" />
         <h2 className="name">Rita & Bukayo</h2>

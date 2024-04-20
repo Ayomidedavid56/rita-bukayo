@@ -6,6 +6,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 0px 10vw;
+	flex-wrap: wrap;
 }
 .left {
     display: flex;
@@ -165,3 +166,10 @@ a, blockquote, span.love_quote, h1 span, h2 span, h3 span, h4 span, h5 span, h6 
     ul#main_menu li a.selected, ul#main_menu li a:hover, .footer_menu li{
     background:none;}
     }
+
+
+	@media screen and (max-width:750px) {
+		.couple-intro-layout .left,.couple-intro-layout .right {
+			width: 100%;
+		}
+	}

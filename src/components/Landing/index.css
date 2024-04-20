@@ -1,16 +1,17 @@
-.layout {
+.landing-layout {
     display: flex;
     min-height: 90vh;
     background-color: white;
     color: black;
     margin-top: 10vh;
+    flex-wrap: wrap;
 }
-.left {
+.landing-layout> .left {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
 }
 
 .left > img {
@@ -50,8 +51,8 @@ object-fit: contain;
     font-size: 60px;
 }
 
-.right {
-    width: 100%;
+.landing-layout> .right {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,4 +99,15 @@ object-fit: contain;
 .image-container::after {
     bottom: -20%;
     left: -10%;
+}
+
+@media  screen and (max-width:750px) {
+    .landing-layout> .left,.landing-layout> .right{
+        width: 100%;
+    }
+
+    .landing-layout> .right{
+        margin-top: 40px;
+        transform: scale(0.7,0.7);
+    }
 }

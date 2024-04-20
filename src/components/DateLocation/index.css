@@ -7,15 +7,24 @@
     justify-content: center;
     align-items: center;
     margin: 100px 0px;
+    width: 100%;
 }
 
 
 .date-layout >p {
     padding: 2em;
+    width: 49%;
 }
 
 .divider {
     width: 1px;
     height: 200px;
     background-color: #585858;
+    z-index: 200;
+}
+
+@media screen and (max-width: 510px) {
+    .date-layout > p {
+        padding: 1em;
+    }
 }
