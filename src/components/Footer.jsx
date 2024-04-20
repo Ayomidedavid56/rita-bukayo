@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer">
       <div className="abreviation-container">
         <div className="abreviation">
-          <span> R & B</span>
+          <span> R I B</span>
         </div>
       </div>
       <div className="container">

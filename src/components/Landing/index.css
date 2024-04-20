@@ -72,6 +72,7 @@ object-fit: contain;
 .image-container > img {
     object-fit: cover;
     height: 100%;
+    min-width: 300px;
     border-radius: 50%;
 }
 
@@ -101,6 +102,18 @@ object-fit: contain;
     left: -10%;
 }
 
+
+.welcome-text {
+    text-align: left;
+    margin-top: 100px;
+    padding: 0px 10vw;
+    
+    }
+
+    .welcome-text p {
+        margin-top: 20px;
+    }
+
 @media  screen and (max-width:750px) {
     .landing-layout> .left,.landing-layout> .right{
         width: 100%;
@@ -110,4 +123,13 @@ object-fit: contain;
         margin-top: 40px;
         transform: scale(0.7,0.7);
     }
+
+    
+}
+
+
+@media screen and (max-width:450px) {
+    .welcome-text {
+        padding: 0px 20px;
+        }
 }
