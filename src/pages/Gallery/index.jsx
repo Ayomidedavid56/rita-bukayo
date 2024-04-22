@@ -1,5 +1,6 @@
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import Modal from "react-modal";
 import j1 from "../../components/images/1.JPG";
 import j2 from "../../components/images/2.JPG";
 import j3 from "../../components/images/3.JPG";
@@ -13,6 +14,24 @@ import j9 from "../../components/images/9.JPG";
 import "./index.css";
 import Intro from "../../components/Intro";
 import DateLocation from "../../components/DateLocation";
+import { useState } from "react";
+import { ImCancelCircle } from "react-icons/im";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    height: "80vh",
+    width: "min(90vw,800px)",
+    marginTop: "5vh",
+    padding: "0px",
+    overflow: "visible",
+  },
+};
 
 export default function Gallery() {
   const images = [j1, j2, j3, j4, j5, j6, j7, j8, j9];
@@ -26,23 +45,52 @@ export default function Gallery() {
     "ks1kts3abizfantpknmj.jpg",
     "kos512ajalpoec5w5aku.jpg",
   ];
+
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function openModal(data) {
+    setIsOpen(data);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
     <div>
       <Navbar />
       <Intro />
       <div className="content">
         {images.map((i, k) => (
-          <div key={k} className="img-container">
+          <div onClick={() => openModal(i)} key={k} className="img-container">
             <img src={i} alt="" />
           </div>
         ))}
         {imageurls.map((i, k) => (
-          <div key={k} className="img-container">
+          <div onClick={() => openModal(i)} key={k} className="img-container">
             <img src={`${imgBaseUrl}/${i}`} alt="" />
           </div>
         ))}
       </div>
       <DateLocation />
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div className="remove-btn" onClick={() => closeModal()}>
+          <ImCancelCircle />
+        </div>
+        <div className="modal-img-container">
+          <img src={modalIsOpen} alt="" />
+        </div>
+      </Modal>
       <Footer />
     </div>
   );
