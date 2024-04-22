@@ -79,7 +79,7 @@ export default function ShareYourExperience() {
       <Intro />
 
       <div className="share-experice">
-        <div style={{ marginTop: "20px" }}>
+        <div style={{ marginTop: "10px", padding: "20px" }}>
           Share your experinces with us, we would love to see them.
         </div>
         <div className="share-experice-content">

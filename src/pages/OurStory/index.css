@@ -1,6 +1,20 @@
 .our-story {
-    padding: 10vh 10vw
+    padding: 10vh 10vw;
+  position: relative;
 }
+
+.our-story ::after {
+    content: "";
+    background:   url('../../components/images/rib-logo.png') no-repeat center ;
+    background-size: 800px 800px;
+    opacity: 0.01;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
 
 .our-story p ,.our-story h4{
 margin-top: 20px;
@@ -9,4 +23,9 @@ margin-top: 20px;
 @media screen and (max-width:400px) {
     .our-story {   padding: 20px 10px;
     }
+
+    .our-story ::after {
+        background-size: 80% ;
+        
+      }
 }

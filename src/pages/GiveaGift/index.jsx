@@ -26,21 +26,7 @@ export default function GiveaGift() {
         <span className="value">A/C No(Euro): 5060499559</span>
         <span className="value">A/C No(Pounds): 5080490907</span>
         <span className="value">A/C No(USD): 5071961850</span>
-        <span className="value" style={{ margin: "20px 0px" }}>
-          ____________________
-        </span>
-        <span className="value">Bank: GTB</span>
-        <span className="value">A/C Name: Adeleke Bukayo</span>
-        <span className="value">A/C No(Naira): 0148318921</span>
-        <span className="value">A/C No(Pounds): 0725160680</span>
-        <span className="value">A/C No(USD): 0725160673</span>
-        <span className="value" style={{ margin: "20px 0px" }}>
-          ____________________
-        </span>
-
-        <span className="value">Bank: GTB</span>
-        <span className="value">A/C Name: Rita Zannu</span>
-        <span className="value">A/C No(Naira): 0208967128</span>
+        <span className="value">A/C No(Naira): 2208991887</span>
       </div>
       <div style={{ marginTop: "100px" }}>Thanks for sharing in our joy.</div>
       <DateLocation />

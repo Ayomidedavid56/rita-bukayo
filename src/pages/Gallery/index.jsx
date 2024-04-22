@@ -40,10 +40,26 @@ export default function Gallery() {
   const imageurls = [
     "lmf3fiezzqu6jhw34yvd.jpg",
     "umb5t8h1jk5tfkuvuqiz.jpg",
-    "avnmt1xwp6v2knjmvhu4.jpg",
-    "qepu21rzx0qz8vgzrefm.jpg",
     "ks1kts3abizfantpknmj.jpg",
     "kos512ajalpoec5w5aku.jpg",
+    "vbygc5o5vwmhwhw2ml51.jpg",
+    "dxuc7xme2xs4rk8feo7f.jpg",
+    "bzkavscj5v0vvvhdvka3.jpg",
+    "xu9nv8och5ri08hrsxji.jpg",
+    "mu8twz5pxro1go6xew4h.jpg",
+    "j8n2eqxtplqymjf41bkc.jpg",
+    "ctgk0c944jb02x1cbfin.jpg",
+    "sijaib0ele5pzsnzaefk.jpg",
+    "medsimnm4zzy7f7qbqfi.jpg",
+    "ruwtw4n0tjog89l1wkep.jpg",
+    "jsr8fgunk4onegmgj5f5.jpg",
+    "mven8sp4kew68keyzwwm.jpg",
+    "svyhljfsjmbkhjbiixl9.jpg",
+    "pzuyusxuepnv6nruq6g9.jpg",
+    "rw18cikkqrvifegwbn5p.jpg",
+    "zptxuyzobkr7lhkucyk5.jpg",
+    "cbpxktp9bz91k48zgvhq.jpg",
+    "uvjnzrlss9cveyzjxjue.jpg",
   ];
 
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -71,7 +87,11 @@ export default function Gallery() {
           </div>
         ))}
         {imageurls.map((i, k) => (
-          <div onClick={() => openModal(i)} key={k} className="img-container">
+          <div
+            onClick={() => openModal(`${imgBaseUrl}/${i}`)}
+            key={k}
+            className="img-container"
+          >
             <img src={`${imgBaseUrl}/${i}`} alt="" />
           </div>
         ))}

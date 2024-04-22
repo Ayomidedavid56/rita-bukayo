@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+@font-face {
+  font-family: "georgia";
+  src: url("./fonts/Georgia.ttf");
+}
+
 :root {
   --primary-color: #5bb462;
   --primary-dark: #4f9c55;
@@ -18,14 +24,12 @@ body {
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 30px;
+  font-size: 16px;
   line-height: 1.2;
-  font-family: "Tangerine", cursive,'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: georgia;
   font-weight: 500;
   font-style: normal;
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
 }
 
 code {

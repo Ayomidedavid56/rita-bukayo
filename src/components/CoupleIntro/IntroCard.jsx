@@ -25,13 +25,6 @@ export default function IntroCard({ image, label, value }) {
             <img src={image} alt="" title="" />
           </div>
         </div>
-
-        <p>
-          Love is friendship that has caught fire. It is quiet understanding,
-          mutual confidence, <a href="#">sharing and forgiving</a>. It is
-          loyalty through good and bad times. It settles for less than
-          perfection and <strong>makes allowances</strong> for human weaknesses
-        </p>
       </div>
     </div>
   );
