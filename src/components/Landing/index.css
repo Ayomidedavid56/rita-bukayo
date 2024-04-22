@@ -49,6 +49,7 @@ object-fit: contain;
     color: #848892;
     background-color: #fff;
     font-size: 50px;
+    white-space: nowrap;
 }
 
 .landing-layout> .right {
