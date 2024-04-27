@@ -28,10 +28,10 @@ export default function Landing() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    setDayValue(days);
-    setHourValue(hours);
-    setMinuteValue(minutes);
-    setSecondValueValue(seconds);
+    setDayValue(0);
+    setHourValue(0);
+    setMinuteValue(0);
+    setSecondValueValue(0);
 
     // If the count down is finished, write some text
     if (distance < 0) {
